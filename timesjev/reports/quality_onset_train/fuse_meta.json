@@ -1,0 +1,14 @@
+{
+  "ashare": {
+    "n_pos_src": 1460,
+    "n_neg_kept": 5840,
+    "skipped": 0,
+    "n_final": 7300
+  },
+  "us_pos": 17,
+  "us_neg": 828,
+  "btc_pos": 0,
+  "btc_neg": 30,
+  "n_total": 8175,
+  "pos_total": 1477
+}

@@ -1,0 +1,839 @@
+{
+  "objective": "quality onset Q1/Q2 training: ashare scale-up then US+BTC fuse",
+  "bar": "selective>=80% @ coverage>=30%",
+  "ashare_hard": {
+    "tag": "ashare_hard_Q",
+    "folds": [
+      {
+        "tag": "ashare_hard_Q",
+        "seed": 7,
+        "n_train": 3985,
+        "n_calib": 1427,
+        "n_test": 1888,
+        "pos_rate_test": 0.1843220338983051,
+        "calib80": {
+          "threshold": 0.5,
+          "acc": 0.8043844856661045,
+          "n": 1186,
+          "coverage": 0.831114225648213,
+          "target": 0.8
+        },
+        "calib75": {
+          "threshold": 0.5,
+          "acc": 0.8043844856661045,
+          "n": 1186,
+          "coverage": 0.831114225648213,
+          "target": 0.75
+        },
+        "test": {
+          "threshold": 0.5,
+          "full_acc": 0.7542372881355932,
+          "full_auc": 0.5998693834900731,
+          "n": 1589,
+          "coverage": 0.8416313559322034,
+          "acc": 0.8401510383889238,
+          "meets": true
+        },
+        "oracle80": {
+          "threshold": 0.5,
+          "acc": 0.8401510383889238,
+          "n": 1589,
+          "coverage": 0.8416313559322034,
+          "target": 0.8
+        }
+      },
+      {
+        "tag": "ashare_hard_Q",
+        "seed": 11,
+        "n_train": 4063,
+        "n_calib": 1387,
+        "n_test": 1850,
+        "pos_rate_test": 0.21675675675675676,
+        "calib80": {
+          "threshold": 0.5,
+          "acc": 0.8351648351648352,
+          "n": 1183,
+          "coverage": 0.8529199711607787,
+          "target": 0.8
+        },
+        "calib75": {
+          "threshold": 0.5,
+          "acc": 0.8351648351648352,
+          "n": 1183,
+          "coverage": 0.8529199711607787,
+          "target": 0.75
+        },
+        "test": {
+          "threshold": 0.5,
+          "full_acc": 0.7362162162162162,
+          "full_auc": 0.612634218456619,
+          "n": 1576,
+          "coverage": 0.8518918918918919,
+          "acc": 0.8064720812182741,
+          "meets": true
+        },
+        "oracle80": {
+          "threshold": 0.5,
+          "acc": 0.8064720812182741,
+          "n": 1576,
+          "coverage": 0.8518918918918919,
+          "target": 0.8
+        }
+      },
+      {
+        "tag": "ashare_hard_Q",
+        "seed": 17,
+        "n_train": 4142,
+        "n_calib": 1333,
+        "n_test": 1825,
+        "pos_rate_test": 0.20164383561643837,
+        "calib80": {
+          "threshold": 0.5,
+          "acc": 0.8407155025553663,
+          "n": 1174,
+          "coverage": 0.8807201800450113,
+          "target": 0.8
+        },
+        "calib75": {
+          "threshold": 0.5,
+          "acc": 0.8407155025553663,
+          "n": 1174,
+          "coverage": 0.8807201800450113,
+          "target": 0.75
+        },
+        "test": {
+          "threshold": 0.5,
+          "full_acc": 0.7704109589041096,
+          "full_auc": 0.6360747217331623,
+          "n": 1600,
+          "coverage": 0.8767123287671232,
+          "acc": 0.825625,
+          "meets": true
+        },
+        "oracle80": {
+          "threshold": 0.5,
+          "acc": 0.825625,
+          "n": 1600,
+          "coverage": 0.8767123287671232,
+          "target": 0.8
+        }
+      },
+      {
+        "tag": "ashare_hard_Q",
+        "seed": 23,
+        "n_train": 4169,
+        "n_calib": 1433,
+        "n_test": 1698,
+        "pos_rate_test": 0.1784452296819788,
+        "calib80": {
+          "threshold": 0.5,
+          "acc": 0.80253766851705,
+          "n": 1261,
+          "coverage": 0.8799720865317515,
+          "target": 0.8
+        },
+        "calib75": {
+          "threshold": 0.5,
+          "acc": 0.80253766851705,
+          "n": 1261,
+          "coverage": 0.8799720865317515,
+          "target": 0.75
+        },
+        "test": {
+          "threshold": 0.5,
+          "full_acc": 0.7779740871613663,
+          "full_auc": 0.5957959236783894,
+          "n": 1512,
+          "coverage": 0.8904593639575972,
+          "acc": 0.8373015873015873,
+          "meets": true
+        },
+        "oracle80": {
+          "threshold": 0.5,
+          "acc": 0.8373015873015873,
+          "n": 1512,
+          "coverage": 0.8904593639575972,
+          "target": 0.8
+        }
+      },
+      {
+        "tag": "ashare_hard_Q",
+        "seed": 29,
+        "n_train": 4097,
+        "n_calib": 1340,
+        "n_test": 1863,
+        "pos_rate_test": 0.19484702093397746,
+        "calib80": {
+          "threshold": 0.5,
+          "acc": 0.825091575091575,
+          "n": 1092,
+          "coverage": 0.8149253731343283,
+          "target": 0.8
+        },
+        "calib75": {
+          "threshold": 0.5,
+          "acc": 0.825091575091575,
+          "n": 1092,
+          "coverage": 0.8149253731343283,
+          "target": 0.75
+        },
+        "test": {
+          "threshold": 0.5,
+          "full_acc": 0.748792270531401,
+          "full_auc": 0.6272479338842974,
+          "n": 1563,
+          "coverage": 0.8389694041867954,
+          "acc": 0.8304542546385156,
+          "meets": true
+        },
+        "oracle80": {
+          "threshold": 0.5,
+          "acc": 0.8304542546385156,
+          "n": 1563,
+          "coverage": 0.8389694041867954,
+          "target": 0.8
+        }
+      }
+    ],
+    "agg": {
+      "mean_full": 0.7575261641897372,
+      "mean_auc": 0.6143244362485083,
+      "mean_sel": 0.8280007923094601,
+      "mean_cov": 0.8599328689471223,
+      "n_meet_80_30": 5,
+      "n_folds": 5
+    }
+  },
+  "ashare_soft_r20": {
+    "tag": "ashare_soft_QR20",
+    "folds": [
+      {
+        "tag": "ashare_soft_QR20",
+        "seed": 7,
+        "n_train": 5486,
+        "n_calib": 2021,
+        "n_test": 2713,
+        "pos_rate_test": 0.4323626981201622,
+        "calib80": null,
+        "calib75": {
+          "threshold": 0.71,
+          "acc": 0.75,
+          "n": 128,
+          "coverage": 0.06333498268184068,
+          "target": 0.75
+        },
+        "test": {
+          "threshold": 0.71,
+          "full_acc": 0.6089200147438261,
+          "full_auc": 0.6375693360348091,
+          "n": 142,
+          "coverage": 0.052340582381127904,
+          "acc": 0.7464788732394366,
+          "meets": false
+        },
+        "oracle80": {
+          "threshold": 0.74,
+          "acc": 0.84375,
+          "n": 64,
+          "coverage": 0.02359012163656469,
+          "target": 0.8
+        }
+      },
+      {
+        "tag": "ashare_soft_QR20",
+        "seed": 11,
+        "n_train": 5630,
+        "n_calib": 1979,
+        "n_test": 2611,
+        "pos_rate_test": 0.4450402144772118,
+        "calib80": {
+          "threshold": 0.75,
+          "acc": 0.8333333333333334,
+          "n": 54,
+          "coverage": 0.027286508337544216,
+          "target": 0.8
+        },
+        "calib75": {
+          "threshold": 0.71,
+          "acc": 0.7536231884057971,
+          "n": 138,
+          "coverage": 0.0697321879737241,
+          "target": 0.75
+        },
+        "test": {
+          "threshold": 0.75,
+          "full_acc": 0.5894293374186136,
+          "full_auc": 0.6187001778186392,
+          "n": 64,
+          "coverage": 0.024511681348142474,
+          "acc": 0.765625,
+          "meets": false
+        },
+        "oracle80": {
+          "threshold": 0.77,
+          "acc": 0.8,
+          "n": 40,
+          "coverage": 0.015319800842589047,
+          "target": 0.8
+        }
+      },
+      {
+        "tag": "ashare_soft_QR20",
+        "seed": 17,
+        "n_train": 5800,
+        "n_calib": 1874,
+        "n_test": 2546,
+        "pos_rate_test": 0.4277297721916732,
+        "calib80": {
+          "threshold": 0.75,
+          "acc": 0.8444444444444444,
+          "n": 45,
+          "coverage": 0.0240128068303095,
+          "target": 0.8
+        },
+        "calib75": {
+          "threshold": 0.7,
+          "acc": 0.7586206896551724,
+          "n": 116,
+          "coverage": 0.061899679829242264,
+          "target": 0.75
+        },
+        "test": {
+          "threshold": 0.75,
+          "full_acc": 0.612725844461901,
+          "full_auc": 0.6490694680000226,
+          "n": 52,
+          "coverage": 0.0204241948153967,
+          "acc": 0.8269230769230769,
+          "meets": false
+        },
+        "oracle80": {
+          "threshold": 0.66,
+          "acc": 0.8126984126984127,
+          "n": 315,
+          "coverage": 0.1237234878240377,
+          "target": 0.8
+        }
+      },
+      {
+        "tag": "ashare_soft_QR20",
+        "seed": 23,
+        "n_train": 5850,
+        "n_calib": 1993,
+        "n_test": 2377,
+        "pos_rate_test": 0.41312578880942363,
+        "calib80": {
+          "threshold": 0.77,
+          "acc": 0.8627450980392157,
+          "n": 51,
+          "coverage": 0.025589563472152535,
+          "target": 0.8
+        },
+        "calib75": {
+          "threshold": 0.73,
+          "acc": 0.76,
+          "n": 125,
+          "coverage": 0.06271951831409935,
+          "target": 0.75
+        },
+        "test": {
+          "threshold": 0.77,
+          "full_acc": 0.6159023979806478,
+          "full_auc": 0.6310955624174204,
+          "n": 51,
+          "coverage": 0.02145561632309634,
+          "acc": 0.7843137254901961,
+          "meets": false
+        },
+        "oracle80": {
+          "threshold": 0.78,
+          "acc": 0.8048780487804879,
+          "n": 41,
+          "coverage": 0.01724863273033235,
+          "target": 0.8
+        }
+      },
+      {
+        "tag": "ashare_soft_QR20",
+        "seed": 29,
+        "n_train": 5813,
+        "n_calib": 1813,
+        "n_test": 2594,
+        "pos_rate_test": 0.4217424826522745,
+        "calib80": {
+          "threshold": 0.71,
+          "acc": 0.821917808219178,
+          "n": 73,
+          "coverage": 0.04026475455046884,
+          "target": 0.8
+        },
+        "calib75": {
+          "threshold": 0.6799999999999999,
+          "acc": 0.7637362637362637,
+          "n": 182,
+          "coverage": 0.10038610038610038,
+          "target": 0.75
+        },
+        "test": {
+          "threshold": 0.71,
+          "full_acc": 0.6237471087124132,
+          "full_auc": 0.6432388787324802,
+          "n": 153,
+          "coverage": 0.058982266769468,
+          "acc": 0.7516339869281046,
+          "meets": false
+        },
+        "oracle80": {
+          "threshold": 0.77,
+          "acc": 0.8333333333333334,
+          "n": 54,
+          "coverage": 0.02081727062451812,
+          "target": 0.8
+        }
+      }
+    ],
+    "agg": {
+      "mean_full": 0.6101449406634802,
+      "mean_auc": 0.6359346846006744,
+      "mean_sel": 0.7749949325161628,
+      "mean_cov": 0.035542868327446284,
+      "n_meet_80_30": 0,
+      "n_folds": 5
+    }
+  },
+  "fuse_all": {
+    "tag": "fuse_all",
+    "folds": [
+      {
+        "tag": "fuse_all",
+        "seed": 7,
+        "n_train": 4530,
+        "n_calib": 1565,
+        "n_test": 2080,
+        "pos_rate_test": 0.17548076923076922,
+        "calib80": {
+          "threshold": 0.5,
+          "acc": 0.8549337260677466,
+          "n": 1358,
+          "coverage": 0.8677316293929712,
+          "target": 0.8
+        },
+        "calib75": {
+          "threshold": 0.5,
+          "acc": 0.8549337260677466,
+          "n": 1358,
+          "coverage": 0.8677316293929712,
+          "target": 0.75
+        },
+        "test": {
+          "threshold": 0.5,
+          "full_acc": 0.7860576923076923,
+          "full_auc": 0.6420080674148327,
+          "n": 1834,
+          "coverage": 0.8817307692307692,
+          "acc": 0.8462377317339149,
+          "meets": true
+        },
+        "oracle80": {
+          "threshold": 0.5,
+          "acc": 0.8462377317339149,
+          "n": 1834,
+          "coverage": 0.8817307692307692,
+          "target": 0.8
+        }
+      },
+      {
+        "tag": "fuse_all",
+        "seed": 11,
+        "n_train": 4609,
+        "n_calib": 1544,
+        "n_test": 2022,
+        "pos_rate_test": 0.18644906033630068,
+        "calib80": {
+          "threshold": 0.5,
+          "acc": 0.8290273556231003,
+          "n": 1316,
+          "coverage": 0.8523316062176166,
+          "target": 0.8
+        },
+        "calib75": {
+          "threshold": 0.5,
+          "acc": 0.8290273556231003,
+          "n": 1316,
+          "coverage": 0.8523316062176166,
+          "target": 0.75
+        },
+        "test": {
+          "threshold": 0.5,
+          "full_acc": 0.7522255192878339,
+          "full_auc": 0.611845234735917,
+          "n": 1735,
+          "coverage": 0.8580613254203758,
+          "acc": 0.829971181556196,
+          "meets": true
+        },
+        "oracle80": {
+          "threshold": 0.5,
+          "acc": 0.829971181556196,
+          "n": 1735,
+          "coverage": 0.8580613254203758,
+          "target": 0.8
+        }
+      },
+      {
+        "tag": "fuse_all",
+        "seed": 17,
+        "n_train": 4562,
+        "n_calib": 1542,
+        "n_test": 2071,
+        "pos_rate_test": 0.1834862385321101,
+        "calib80": {
+          "threshold": 0.5,
+          "acc": 0.8372268274302939,
+          "n": 1327,
+          "coverage": 0.8605706874189365,
+          "target": 0.8
+        },
+        "calib75": {
+          "threshold": 0.5,
+          "acc": 0.8372268274302939,
+          "n": 1327,
+          "coverage": 0.8605706874189365,
+          "target": 0.75
+        },
+        "test": {
+          "threshold": 0.5,
+          "full_acc": 0.7894736842105263,
+          "full_auc": 0.649669301876809,
+          "n": 1826,
+          "coverage": 0.8816996619990343,
+          "acc": 0.8444687842278203,
+          "meets": true
+        },
+        "oracle80": {
+          "threshold": 0.5,
+          "acc": 0.8444687842278203,
+          "n": 1826,
+          "coverage": 0.8816996619990343,
+          "target": 0.8
+        }
+      },
+      {
+        "tag": "fuse_all",
+        "seed": 23,
+        "n_train": 4430,
+        "n_calib": 1630,
+        "n_test": 2115,
+        "pos_rate_test": 0.1900709219858156,
+        "calib80": {
+          "threshold": 0.5,
+          "acc": 0.8291814946619217,
+          "n": 1405,
+          "coverage": 0.8619631901840491,
+          "target": 0.8
+        },
+        "calib75": {
+          "threshold": 0.5,
+          "acc": 0.8291814946619217,
+          "n": 1405,
+          "coverage": 0.8619631901840491,
+          "target": 0.75
+        },
+        "test": {
+          "threshold": 0.5,
+          "full_acc": 0.7739952718676123,
+          "full_auc": 0.6403199995353065,
+          "n": 1853,
+          "coverage": 0.8761229314420804,
+          "acc": 0.8343227199136536,
+          "meets": true
+        },
+        "oracle80": {
+          "threshold": 0.5,
+          "acc": 0.8343227199136536,
+          "n": 1853,
+          "coverage": 0.8761229314420804,
+          "target": 0.8
+        }
+      },
+      {
+        "tag": "fuse_all",
+        "seed": 29,
+        "n_train": 4473,
+        "n_calib": 1643,
+        "n_test": 2059,
+        "pos_rate_test": 0.18309859154929578,
+        "calib80": {
+          "threshold": 0.5,
+          "acc": 0.8315143246930423,
+          "n": 1466,
+          "coverage": 0.8922702373706635,
+          "target": 0.8
+        },
+        "calib75": {
+          "threshold": 0.5,
+          "acc": 0.8315143246930423,
+          "n": 1466,
+          "coverage": 0.8922702373706635,
+          "target": 0.75
+        },
+        "test": {
+          "threshold": 0.5,
+          "full_acc": 0.7901894123360855,
+          "full_auc": 0.6090529463156467,
+          "n": 1861,
+          "coverage": 0.9038368139873725,
+          "acc": 0.8361096184846857,
+          "meets": true
+        },
+        "oracle80": {
+          "threshold": 0.5,
+          "acc": 0.8361096184846857,
+          "n": 1861,
+          "coverage": 0.9038368139873725,
+          "target": 0.8
+        }
+      }
+    ],
+    "agg": {
+      "mean_full": 0.77838831600195,
+      "mean_auc": 0.6305791099757023,
+      "mean_sel": 0.8382220071832542,
+      "mean_cov": 0.8802903004159266,
+      "n_meet_80_30": 5,
+      "n_folds": 5
+    }
+  },
+  "fuse_ashare_us": {
+    "tag": "fuse_ashare_us",
+    "folds": [
+      {
+        "tag": "fuse_ashare_us",
+        "seed": 7,
+        "n_train": 4368,
+        "n_calib": 1624,
+        "n_test": 2153,
+        "pos_rate_test": 0.20622387366465397,
+        "calib80": {
+          "threshold": 0.5,
+          "acc": 0.865073787772312,
+          "n": 1423,
+          "coverage": 0.8762315270935961,
+          "target": 0.8
+        },
+        "calib75": {
+          "threshold": 0.5,
+          "acc": 0.865073787772312,
+          "n": 1423,
+          "coverage": 0.8762315270935961,
+          "target": 0.75
+        },
+        "test": {
+          "threshold": 0.5,
+          "full_acc": 0.7654435671156525,
+          "full_auc": 0.6434878412643187,
+          "n": 1834,
+          "coverage": 0.8518346493265211,
+          "acc": 0.8287895310796074,
+          "meets": true
+        },
+        "oracle80": {
+          "threshold": 0.5,
+          "acc": 0.8287895310796074,
+          "n": 1834,
+          "coverage": 0.8518346493265211,
+          "target": 0.8
+        }
+      },
+      {
+        "tag": "fuse_ashare_us",
+        "seed": 11,
+        "n_train": 4555,
+        "n_calib": 1657,
+        "n_test": 1933,
+        "pos_rate_test": 0.1908949818934299,
+        "calib80": {
+          "threshold": 0.5,
+          "acc": 0.8377997179125529,
+          "n": 1418,
+          "coverage": 0.8557634278817139,
+          "target": 0.8
+        },
+        "calib75": {
+          "threshold": 0.5,
+          "acc": 0.8377997179125529,
+          "n": 1418,
+          "coverage": 0.8557634278817139,
+          "target": 0.75
+        },
+        "test": {
+          "threshold": 0.5,
+          "full_acc": 0.7646145887221935,
+          "full_auc": 0.5989263856832941,
+          "n": 1675,
+          "coverage": 0.8665287118468702,
+          "acc": 0.8316417910447761,
+          "meets": true
+        },
+        "oracle80": {
+          "threshold": 0.5,
+          "acc": 0.8316417910447761,
+          "n": 1675,
+          "coverage": 0.8665287118468702,
+          "target": 0.8
+        }
+      },
+      {
+        "tag": "fuse_ashare_us",
+        "seed": 17,
+        "n_train": 4449,
+        "n_calib": 1560,
+        "n_test": 2136,
+        "pos_rate_test": 0.17322097378277154,
+        "calib80": {
+          "threshold": 0.5,
+          "acc": 0.8433382137628112,
+          "n": 1366,
+          "coverage": 0.8756410256410256,
+          "target": 0.8
+        },
+        "calib75": {
+          "threshold": 0.5,
+          "acc": 0.8433382137628112,
+          "n": 1366,
+          "coverage": 0.8756410256410256,
+          "target": 0.75
+        },
+        "test": {
+          "threshold": 0.5,
+          "full_acc": 0.7926029962546817,
+          "full_auc": 0.6485132074316673,
+          "n": 1892,
+          "coverage": 0.8857677902621723,
+          "acc": 0.8498942917547568,
+          "meets": true
+        },
+        "oracle80": {
+          "threshold": 0.5,
+          "acc": 0.8498942917547568,
+          "n": 1892,
+          "coverage": 0.8857677902621723,
+          "target": 0.8
+        }
+      },
+      {
+        "tag": "fuse_ashare_us",
+        "seed": 23,
+        "n_train": 4484,
+        "n_calib": 1667,
+        "n_test": 1994,
+        "pos_rate_test": 0.17953861584754263,
+        "calib80": {
+          "threshold": 0.5,
+          "acc": 0.8524137931034482,
+          "n": 1450,
+          "coverage": 0.8698260347930414,
+          "target": 0.8
+        },
+        "calib75": {
+          "threshold": 0.5,
+          "acc": 0.8524137931034482,
+          "n": 1450,
+          "coverage": 0.8698260347930414,
+          "target": 0.75
+        },
+        "test": {
+          "threshold": 0.5,
+          "full_acc": 0.7808425275827482,
+          "full_auc": 0.6255156328966958,
+          "n": 1752,
+          "coverage": 0.8786359077231695,
+          "acc": 0.8430365296803652,
+          "meets": true
+        },
+        "oracle80": {
+          "threshold": 0.5,
+          "acc": 0.8430365296803652,
+          "n": 1752,
+          "coverage": 0.8786359077231695,
+          "target": 0.8
+        }
+      },
+      {
+        "tag": "fuse_ashare_us",
+        "seed": 29,
+        "n_train": 4622,
+        "n_calib": 1617,
+        "n_test": 1906,
+        "pos_rate_test": 0.16736621196222456,
+        "calib80": {
+          "threshold": 0.5,
+          "acc": 0.8282967032967034,
+          "n": 1456,
+          "coverage": 0.9004329004329005,
+          "target": 0.8
+        },
+        "calib75": {
+          "threshold": 0.5,
+          "acc": 0.8282967032967034,
+          "n": 1456,
+          "coverage": 0.9004329004329005,
+          "target": 0.75
+        },
+        "test": {
+          "threshold": 0.5,
+          "full_acc": 0.8001049317943337,
+          "full_auc": 0.6101702113370192,
+          "n": 1755,
+          "coverage": 0.9207764952780693,
+          "acc": 0.841025641025641,
+          "meets": true
+        },
+        "oracle80": {
+          "threshold": 0.5,
+          "acc": 0.841025641025641,
+          "n": 1755,
+          "coverage": 0.9207764952780693,
+          "target": 0.8
+        }
+      }
+    ],
+    "agg": {
+      "mean_full": 0.780721722293922,
+      "mean_auc": 0.6253226557225989,
+      "mean_sel": 0.8388775569170293,
+      "mean_cov": 0.8807087108873605,
+      "n_meet_80_30": 5,
+      "n_folds": 5
+    }
+  },
+  "btc_purged": null,
+  "sample_meta": {
+    "ashare_hard": {
+      "n_pos_src": 1460,
+      "n_neg_kept": 5840,
+      "skipped": 0,
+      "n_final": 7300
+    },
+    "ashare_soft": {
+      "n_pos_src": 1460,
+      "n_neg_kept": 5840,
+      "skipped": 0,
+      "n_final": 10220
+    },
+    "fuse": {
+      "ashare": {
+        "n_pos_src": 1460,
+        "n_neg_kept": 5840,
+        "skipped": 0,
+        "n_final": 7300
+      },
+      "us_pos": 17,
+      "us_neg": 828,
+      "btc_pos": 0,
+      "btc_neg": 30,
+      "n_total": 8175,
+      "pos_total": 1477
+    }
+  }
+}
