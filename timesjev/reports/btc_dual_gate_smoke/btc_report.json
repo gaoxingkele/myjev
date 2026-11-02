@@ -1,0 +1,198 @@
+{
+  "method": "tabular dual-gate (same as A-share milestone)",
+  "bar": "selective ≥80% @ coverage ≥30%",
+  "btc_only_purged": {
+    "tag": "BTCUSDT_purged_holdout",
+    "n": 570,
+    "up": 340,
+    "down": 230,
+    "date_test": "2025-07-07→2026-10-11",
+    "calib_dual80": null,
+    "calib_dual75": null,
+    "test_dual": {
+      "threshold": 0.6,
+      "full_acc": 0.4825174825174825,
+      "full_auc": 0.34905660377358494,
+      "n": 110,
+      "coverage": 0.7692307692307693,
+      "acc": 0.39090909090909093,
+      "meets": false
+    },
+    "test_oracle_dual80": null
+  },
+  "crypto_pool": {
+    "tag": "crypto_pool_group_shuffle",
+    "n": 9657,
+    "up": 5402,
+    "down": 4255,
+    "n_symbols": 15,
+    "train_n": 5157,
+    "calib_n": 1956,
+    "test_n": 2544,
+    "calib_dual80": null,
+    "calib_dual75": {
+      "threshold": 0.61,
+      "acc": 0.774869109947644,
+      "n": 382,
+      "coverage": 0.19529652351738241,
+      "target": 0.75
+    },
+    "test_dual": {
+      "threshold": 0.61,
+      "full_acc": 0.5554245283018868,
+      "full_auc": 0.5650870331359883,
+      "n": 842,
+      "coverage": 0.3309748427672956,
+      "acc": 0.5724465558194775,
+      "meets": false
+    },
+    "test_oracle_dual80": null,
+    "test_symbols": [
+      "ATOMUSDT",
+      "BTCUSDT",
+      "ETHUSDT",
+      "LTCUSDT"
+    ]
+  },
+  "core5": {
+    "tag": "core5_group_shuffle",
+    "n": 3216,
+    "up": 1854,
+    "down": 1362,
+    "n_symbols": 5,
+    "train_n": 1331,
+    "calib_n": 570,
+    "test_n": 1315,
+    "calib_dual80": null,
+    "calib_dual75": null,
+    "test_dual": {
+      "threshold": 0.6,
+      "full_acc": 0.5437262357414449,
+      "full_auc": 0.5401516586756827,
+      "n": 0,
+      "coverage": 0.0,
+      "acc": null,
+      "meets": false
+    },
+    "test_oracle_dual80": null,
+    "test_symbols": [
+      "BNBUSDT",
+      "SOLUSDT"
+    ]
+  },
+  "verdict": {
+    "btc_only": "FAIL",
+    "crypto_pool_logreg": "FAIL",
+    "crypto_pool_hgb": "FAIL",
+    "best_observed": "HGB pool calib dual80≈80%@22%cov, but test selective≈66%@24% — does not hold OOS",
+    "note": "同方法在加密侧未达 A股里程碑 selective≥80%@≥30%。单BTC时序外推更差；多币种截面有校准信号但测试掉点。不晋升 crypto 生产路径。"
+  },
+  "hgb_ablation": {
+    "hgb_pool": {
+      "clf": "hgb",
+      "n": 9657,
+      "calib80": {
+        "threshold": 0.63,
+        "acc": 0.8004640371229699,
+        "n": 431,
+        "coverage": 0.22034764826175868,
+        "target": 0.8
+      },
+      "calib75": {
+        "threshold": 0.59,
+        "acc": 0.7617689015691869,
+        "n": 701,
+        "coverage": 0.35838445807770963,
+        "target": 0.75
+      },
+      "test": {
+        "threshold": 0.63,
+        "full_acc": 0.5786163522012578,
+        "full_auc": 0.605403192795743,
+        "n": 604,
+        "coverage": 0.23742138364779874,
+        "acc": 0.6589403973509934,
+        "meets": false
+      },
+      "oracle80": {
+        "threshold": 0.73,
+        "acc": 0.8135593220338984,
+        "n": 59,
+        "coverage": 0.023191823899371068,
+        "target": 0.8
+      }
+    },
+    "logreg_pool": {
+      "clf": "logreg",
+      "n": 9657,
+      "calib80": null,
+      "calib75": {
+        "threshold": 0.61,
+        "acc": 0.774869109947644,
+        "n": 382,
+        "coverage": 0.19529652351738241,
+        "target": 0.75
+      },
+      "test": {
+        "threshold": 0.61,
+        "full_acc": 0.5554245283018868,
+        "full_auc": 0.5650870331359883,
+        "n": 842,
+        "coverage": 0.3309748427672956,
+        "acc": 0.5724465558194775,
+        "meets": false
+      },
+      "oracle80": null
+    },
+    "hgb_ultra": {
+      "clf": "hgb",
+      "n": 4346,
+      "calib80": {
+        "threshold": 0.64,
+        "acc": 0.8105726872246696,
+        "n": 227,
+        "coverage": 0.26242774566473986,
+        "target": 0.8
+      },
+      "calib75": {
+        "threshold": 0.6,
+        "acc": 0.7537091988130564,
+        "n": 337,
+        "coverage": 0.3895953757225434,
+        "target": 0.75
+      },
+      "test": {
+        "threshold": 0.64,
+        "full_acc": 0.5620767494356659,
+        "full_auc": 0.5897838214783822,
+        "n": 266,
+        "coverage": 0.3002257336343115,
+        "acc": 0.6578947368421053,
+        "meets": false
+      },
+      "oracle80": {
+        "threshold": 0.71,
+        "acc": 0.8021978021978022,
+        "n": 91,
+        "coverage": 0.10270880361173815,
+        "target": 0.8
+      }
+    },
+    "logreg_ultra": {
+      "clf": "logreg",
+      "n": 4346,
+      "calib80": null,
+      "calib75": null,
+      "test": {
+        "threshold": 0.6,
+        "full_acc": 0.5564334085778782,
+        "full_auc": 0.5532549840019689,
+        "n": 368,
+        "coverage": 0.4153498871331828,
+        "acc": 0.5815217391304348,
+        "meets": false
+      },
+      "oracle80": null
+    }
+  }
+}

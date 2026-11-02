@@ -1,0 +1,30 @@
+{
+  "names": [
+    "X std",
+    "X range",
+    "X slope",
+    "X acf lag1",
+    "X zero-crossing rate",
+    "Y std",
+    "Y range",
+    "Y slope",
+    "Y acf lag1",
+    "Y zero-crossing rate",
+    "Z std",
+    "Z range",
+    "Z slope",
+    "Z acf lag1",
+    "Z zero-crossing rate",
+    "X-Y xcorr lag0",
+    "X-Y best corr",
+    "X-Z xcorr lag0",
+    "X-Z best corr",
+    "Y-Z xcorr lag0",
+    "Y-Z best corr",
+    "X high_fluctuation",
+    "Y high_fluctuation",
+    "X periodicity",
+    "Z periodicity"
+  ],
+  "method": "updown prod"
+}

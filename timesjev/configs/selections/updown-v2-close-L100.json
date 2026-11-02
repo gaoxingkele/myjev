@@ -1,0 +1,22 @@
+{
+  "names": [
+    "std",
+    "range",
+    "IQR",
+    "mean abs step",
+    "std abs step",
+    "max abs step",
+    "acf lag1",
+    "acf lag2",
+    "slope",
+    "argmax position",
+    "zero-crossing rate",
+    "dominant period",
+    "periodicity",
+    "high_fluctuation",
+    "stats3 median",
+    "c24 SD"
+  ],
+  "method": "updown v2",
+  "mm": false
+}

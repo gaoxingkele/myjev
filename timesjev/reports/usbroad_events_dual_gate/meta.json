@@ -1,0 +1,19 @@
+{
+  "n_universe": 104,
+  "n_us_events": 51944,
+  "n_btc_events": 707,
+  "earnings_symbols_hit": 104,
+  "macro_days": 168,
+  "labels": {
+    "UP": [
+      0.08,
+      0.04,
+      -0.08
+    ],
+    "DOWN": [
+      0.03,
+      -0.04,
+      -0.08
+    ]
+  }
+}

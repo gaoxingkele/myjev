@@ -1,0 +1,16 @@
+# large local artifacts
+models/
+hf_cache/
+hf_home/
+runtime/
+repos/
+**/__pycache__/
+**/.venv/
+*.pyc
+.env
+*.pkl
+*.pt
+*.bin
+*.safetensors
+*.gguf
+.DS_Store

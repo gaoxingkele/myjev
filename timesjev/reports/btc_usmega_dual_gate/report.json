@@ -1,0 +1,233 @@
+{
+  "question": "BTC + US mega-tech (no alts) dual-gate vs A-share milestone",
+  "bar": "selective >=80% @ coverage >=30%",
+  "meta": {
+    "n_events": 6373,
+    "by_symbol": {
+      "AAPL": 548,
+      "AMD": 616,
+      "AMZN": 524,
+      "AVGO": 586,
+      "BTCUSDT": 707,
+      "GOOGL": 564,
+      "META": 608,
+      "MSFT": 480,
+      "NFLX": 580,
+      "NVDA": 597,
+      "TSLA": 563
+    },
+    "labels": {
+      "UP": [
+        0.08,
+        0.04,
+        -0.08
+      ],
+      "DOWN": [
+        0.03,
+        -0.04,
+        -0.08
+      ]
+    },
+    "universe": [
+      "BTCUSDT",
+      "AAPL",
+      "MSFT",
+      "NVDA",
+      "GOOGL",
+      "AMZN",
+      "META",
+      "TSLA",
+      "AVGO",
+      "NFLX",
+      "AMD"
+    ]
+  },
+  "results": {
+    "us_only_hgb": {
+      "tag": "us_mega_only",
+      "clf": "hgb",
+      "n": 5666,
+      "up": 3669,
+      "down": 1997,
+      "n_symbols": 10,
+      "train_n": 2747,
+      "calib_n": 1166,
+      "test_n": 1753,
+      "test_symbols": [
+        "AAPL",
+        "META",
+        "NVDA"
+      ],
+      "calib_dual80": null,
+      "calib_dual75": null,
+      "test_dual": {
+        "threshold": 0.6,
+        "full_acc": 0.4957216200798631,
+        "full_auc": 0.5472133571338418,
+        "n": 661,
+        "coverage": 0.37706788362806615,
+        "acc": 0.708018154311649,
+        "meets": false
+      },
+      "test_oracle_dual80": {
+        "threshold": 0.67,
+        "acc": 0.8333333333333334,
+        "n": 150,
+        "coverage": 0.08556759840273816,
+        "target": 0.8
+      },
+      "btc_in_test": null
+    },
+    "us_only_logreg": {
+      "tag": "us_mega_only",
+      "clf": "logreg",
+      "n": 5666,
+      "up": 3669,
+      "down": 1997,
+      "n_symbols": 10,
+      "train_n": 2747,
+      "calib_n": 1166,
+      "test_n": 1753,
+      "test_symbols": [
+        "AAPL",
+        "META",
+        "NVDA"
+      ],
+      "calib_dual80": {
+        "threshold": 0.64,
+        "acc": 0.8,
+        "n": 40,
+        "coverage": 0.03430531732418525,
+        "target": 0.8
+      },
+      "calib_dual75": {
+        "threshold": 0.64,
+        "acc": 0.8,
+        "n": 40,
+        "coverage": 0.03430531732418525,
+        "target": 0.75
+      },
+      "test_dual": {
+        "threshold": 0.64,
+        "full_acc": 0.6457501426126641,
+        "full_auc": 0.5177992943990672,
+        "n": 111,
+        "coverage": 0.06332002281802625,
+        "acc": 0.7747747747747747,
+        "meets": false
+      },
+      "test_oracle_dual80": null,
+      "btc_in_test": null
+    },
+    "btc_us_hgb": {
+      "tag": "btc_plus_us_mega",
+      "clf": "hgb",
+      "n": 6373,
+      "up": 4134,
+      "down": 2239,
+      "n_symbols": 11,
+      "train_n": 3498,
+      "calib_n": 1183,
+      "test_n": 1692,
+      "test_symbols": [
+        "AAPL",
+        "GOOGL",
+        "NFLX"
+      ],
+      "calib_dual80": {
+        "threshold": 0.67,
+        "acc": 0.8225806451612904,
+        "n": 310,
+        "coverage": 0.26204564666103125,
+        "target": 0.8
+      },
+      "calib_dual75": {
+        "threshold": 0.65,
+        "acc": 0.7734806629834254,
+        "n": 543,
+        "coverage": 0.45900253592561285,
+        "target": 0.75
+      },
+      "test_dual": {
+        "threshold": 0.67,
+        "full_acc": 0.6057919621749409,
+        "full_auc": 0.5709749802012144,
+        "n": 322,
+        "coverage": 0.19030732860520094,
+        "acc": 0.6273291925465838,
+        "meets": false
+      },
+      "test_oracle_dual80": null,
+      "btc_in_test": null
+    },
+    "btc_us_logreg": {
+      "tag": "btc_plus_us_mega",
+      "clf": "logreg",
+      "n": 6373,
+      "up": 4134,
+      "down": 2239,
+      "n_symbols": 11,
+      "train_n": 3498,
+      "calib_n": 1183,
+      "test_n": 1692,
+      "test_symbols": [
+        "AAPL",
+        "GOOGL",
+        "NFLX"
+      ],
+      "calib_dual80": {
+        "threshold": 0.67,
+        "acc": 0.8682170542635659,
+        "n": 129,
+        "coverage": 0.10904480135249366,
+        "target": 0.8
+      },
+      "calib_dual75": {
+        "threshold": 0.65,
+        "acc": 0.7551020408163265,
+        "n": 392,
+        "coverage": 0.33136094674556216,
+        "target": 0.75
+      },
+      "test_dual": {
+        "threshold": 0.67,
+        "full_acc": 0.601063829787234,
+        "full_auc": 0.5037881676590502,
+        "n": 32,
+        "coverage": 0.018912529550827423,
+        "acc": 0.5625,
+        "meets": false
+      },
+      "test_oracle_dual80": {
+        "threshold": 0.7,
+        "acc": 0.8,
+        "n": 15,
+        "coverage": 0.008865248226950355,
+        "target": 0.8
+      },
+      "btc_in_test": null
+    },
+    "btc_purged_hgb": {
+      "tag": "BTC_purged",
+      "clf": "hgb",
+      "n": 707,
+      "date_test": "2025-11-11->2026-10-11",
+      "calib_dual80": null,
+      "calib_dual75": null,
+      "test_dual": {
+        "threshold": 0.6,
+        "full_acc": 0.4689265536723164,
+        "full_auc": 0.4521907216494846,
+        "n": 157,
+        "coverage": 0.8870056497175142,
+        "acc": 0.5095541401273885,
+        "meets": false
+      }
+    }
+  },
+  "verdict": {
+    "us_only_hgb": "FAIL",
+    "btc_us_hgb": "FAIL",
+    "btc_purged_hgb": "FAIL"
+  }
+}
