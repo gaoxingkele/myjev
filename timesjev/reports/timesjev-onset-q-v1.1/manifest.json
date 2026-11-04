@@ -1,0 +1,79 @@
+{
+  "version": "timesjev-onset-q-v1.1",
+  "parent": "timesjev-onset-q-v1",
+  "created_utc": "2026-11-04T02:08:48Z",
+  "changes": [
+    "positive event dedup gap>=20d",
+    "hard negatives (clear/R20 but not Q) + easy NEG",
+    "cross-section ranks/excess",
+    "threshold floor >=0.55 when calibrated"
+  ],
+  "sample_meta": {
+    "n_pos_raw": 1460,
+    "n_pos_dedup": 1087,
+    "n_hard_neg": 3261,
+    "n_easy_neg": 1087,
+    "skipped": 0,
+    "n_final": 5435,
+    "feat_dim": 42
+  },
+  "multi_seed_eval": {
+    "mean_full": 0.7528105169967431,
+    "mean_auc": 0.5710790143851275,
+    "mean_sel": 0.8158111124484254,
+    "mean_cov": 0.8375623793441849,
+    "mean_thr": 0.558,
+    "n_meet": 5,
+    "n_folds": 5,
+    "feat_dim": 42
+  },
+  "threshold": 0.55,
+  "threshold_natural": 0.5,
+  "calib_dual80": {
+    "threshold": 0.5,
+    "acc": 0.801354401805869,
+    "n": 886,
+    "coverage": 0.881592039800995,
+    "target": 0.8
+  },
+  "calib_dual75": {
+    "threshold": 0.5,
+    "acc": 0.801354401805869,
+    "n": 886,
+    "coverage": 0.881592039800995,
+    "target": 0.75
+  },
+  "holdout_test": {
+    "threshold": 0.55,
+    "full_acc": 0.748159057437408,
+    "full_auc": 0.5661712106842408,
+    "n": 1179,
+    "coverage": 0.8681885125184094,
+    "acc": 0.8074639525021204,
+    "meets": true
+  },
+  "holdout_natural_thr": {
+    "threshold": 0.5,
+    "full_acc": 0.748159057437408,
+    "full_auc": 0.5661712106842408,
+    "n": 1197,
+    "coverage": 0.8814432989690721,
+    "acc": 0.8036758563074352,
+    "meets": true
+  },
+  "meets_prod_bar": true,
+  "feature_spec": {
+    "left_bars": 60,
+    "price_dim": 30,
+    "cs_dim": 12,
+    "dim": 42,
+    "expert_a": "price[0:15]",
+    "expert_b": "price[15:30]+cs[12]",
+    "dedup_gap_days": 20,
+    "neg_mix": {
+      "hard_ratio": 3,
+      "easy_ratio": 1
+    }
+  },
+  "recommend_bundle": "bundle_full.joblib"
+}
